@@ -22,10 +22,8 @@ pub struct DHT11<'a, D> {
     pub delay: D,
 }
 
-const ERROR_CHECKSUM: u8 = 254; // Error code indicating checksum mismatch.
 const ERROR_TIMEOUT: u8 = 253; // Error code indicating a timeout occurred during reading.
 const TIMEOUT_DURATION: u64 = 1000; // Duration (in milliseconds) to wait before timing out.
-const READ_TIMEOUT_DURATION: u64 = 200; // Duration (in milliseconds) to wait before timing out.
 impl<'a, D> DHT11<'a, D>
 where
     D: DelayNs,
