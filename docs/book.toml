@@ -1,0 +1,9 @@
+[book]
+title = "ESP32 Sensors in Rust"
+authors = ["nambrosini"]
+language = "en"
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+additional-css = ["theme/tokyo-night-storm.css"]

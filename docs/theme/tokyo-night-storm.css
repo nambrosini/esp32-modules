@@ -1,0 +1,50 @@
+/* Tokyo Night Storm palette applied over mdBook's "navy" theme */
+.navy {
+    --bg: #24283b;
+    --fg: #c0caf5;
+
+    --sidebar-bg: #1f2335;
+    --sidebar-fg: #a9b1d6;
+    --sidebar-non-existant: #565f89;
+    --sidebar-active: #7aa2f7;
+    --sidebar-spacer: #292e42;
+
+    --icons: #565f89;
+    --icons-hover: #c0caf5;
+
+    --links: #7aa2f7;
+
+    --inline-code-color: #bb9af7;
+
+    --theme-popup-bg: #1f2335;
+    --theme-popup-border: #292e42;
+    --theme-hover: #292e42;
+
+    --quote-bg: #1f2335;
+    --quote-border: #292e42;
+
+    --warning-border: #e0af68;
+
+    --table-border-color: #292e42;
+    --table-header-bg: #292e42;
+    --table-alternate-bg: #1f2335;
+
+    --searchbar-border-color: #565f89;
+    --searchbar-bg: #1f2335;
+    --searchbar-fg: #c0caf5;
+    --searchbar-shadow-color: #16161e;
+    --searchresults-header-fg: #565f89;
+    --searchresults-border-color: #292e42;
+    --searchresults-li-bg: #1f2335;
+    --search-mark-bg: #7aa2f7;
+
+    --footnote-highlight: #7aa2f7;
+
+    --blockquote-note-color: #7dcfff;
+    --blockquote-tip-color: #9ece6a;
+    --blockquote-important-color: #bb9af7;
+    --blockquote-warning-color: #e0af68;
+    --blockquote-caution-color: #f7768e;
+
+    --sidebar-header-border-color: #7aa2f7;
+}

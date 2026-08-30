@@ -1,0 +1,78 @@
+[package]
+edition      = "2024"
+name         = "sensors"
+rust-version = "1.88"
+version      = "0.1.0"
+
+[[bin]]
+name = "00-blink-led"
+path = "src/bin/00-blink-led.rs"
+
+[[bin]]
+name = "01-rgb-led"
+path = "src/bin/01-rgb-led.rs"
+
+[[bin]]
+name = "02-smd-rgb"
+path = "src/bin/02-smd-rgb.rs"
+
+[[bin]]
+name = "04-laser-module"
+path = "src/bin/04-laser-module.rs"
+
+[[bin]]
+name = "05-ir-transmitter"
+path = "src/bin/05-ir-transmitter.rs"
+
+[[bin]]
+name = "06-ir-receiver"
+path = "src/bin/06-ir-receiver.rs"
+
+[[bin]]
+name = "07-dht11-module"
+path = "src/bin/07-dht11-module.rs"
+
+[[bin]]
+name = "11-active-buzzer"
+path = "src/bin/11-active-buzzer.rs"
+
+[[bin]]
+name = "12-passive-buzzer"
+path = "src/bin/12-passive-buzzer.rs"
+
+[[bin]]
+name = "45-ultrasound"
+path = "src/bin/45-ultrasound.rs"
+
+[[bin]]
+name = "46-oled"
+path = "src/bin/46-oled.rs"
+
+[dependencies]
+esp-hal = { version = "~1.1.0", features = ["esp32", "log-04", "unstable"] }
+
+esp-bootloader-esp-idf = { version = "0.5.0", features = ["esp32", "log-04"] }
+log                    = "0.4.27"
+
+critical-section  = "1.2.0"
+esp-println       = { version = "0.17.0", features = ["esp32", "log-04"] }
+esp-backtrace     = { version = "0.19.0", features = ["esp32", "println", "panic-handler"] }
+infrared          = "0.14.2"
+esp32-dht11-rs    = { version = "0.1.4", default-features = false, features = ["esp32"] }
+ssd1306           = "0.9"
+embedded-graphics = "0.8"
+
+[patch.crates-io]
+esp32-dht11-rs = { path = "vendor/esp32-dht11-rs" }
+
+# For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
+[profile.dev]
+# The default debug profile is too slow and too big for resource-constrained devices.
+# Always build with some optimizations enabled.
+opt-level = "s"
+
+[profile.release]
+codegen-units = 1     # LLVM can perform better optimizations using a single thread
+debug         = 2     # prefer slower builds but better debugging experience
+lto           = 'fat'
+opt-level     = 's'
