@@ -31,10 +31,10 @@ new url:
     tmp_img = f"/tmp/{slug}{os.path.splitext(img_src)[1]}"
     with urllib.request.urlopen(urllib.request.Request(img_url, headers=headers)) as resp, open(tmp_img, "wb") as f:
         f.write(resp.read())
-    subprocess.run(["sips", "-s", "format", "jpeg", tmp_img, "--out", f"src/images/{slug}.jpg"], check=True, capture_output=True)
+    subprocess.run(["sips", "-s", "format", "jpeg", tmp_img, "--out", f"docs/src/images/{slug}.jpg"], check=True, capture_output=True)
     os.remove(tmp_img)
 
-    module_path = f"src/modules/{slug}.md"
+    module_path = f"docs/src/modules/{slug}.md"
     content = "\n".join([
         f"# {title}", "",
         "## Description", "",
@@ -50,10 +50,10 @@ new url:
     with open(module_path, "w") as f:
         f.write(content)
 
-    with open("src/SUMMARY.md", "a") as f:
+    with open("docs/src/SUMMARY.md", "a") as f:
         f.write(f"    - [{title}](./modules/{slug}.md)\n")
 
-    with open("src/sensors.md", "a") as f:
+    with open("docs/src/sensors.md", "a") as f:
         f.write(f"{number}. [{name}](./modules/{slug}.md)\n")
 
     print(f"Created {module_path}")

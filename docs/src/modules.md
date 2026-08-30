@@ -9,6 +9,7 @@ There are the following 45 sensors in the set:
 5. [Ir Transmitters](./modules/05-ir-transmitters.md)
 6. [Ir Receiver](./modules/06-ir-receiver.md)
 7. [Dht11 Module](./modules/07-dht11-module.md)
+8. [Double Color Led](./modules/08-double-color-led.md)
 11. [Active Buzzer](./modules/11-active-buzzer.md)
 12. [Passtive Buzzer](./modules/12-passtive-buzzer.md)
 45. [Ultrasonic Module](./modules/45-ultrasonic.md)
