@@ -11,6 +11,7 @@
     - [7 Dht11 Module](./modules/07-dht11-module.md)
     - [8 Double Color Led](./modules/08-double-color-led.md)
     - [9 Mini Double Color Led](./modules/09-mini-double-color-led.md)
+    - [10 Light Cup](./modules/10-light-cup.md)
     - [11 Active Buzzer](./modules/11-active-buzzer.md)
     - [12 Passtive Buzzer](./modules/12-passtive-buzzer.md)
     - [45 Ultrasonic Module](./modules/45-ultrasonic.md)

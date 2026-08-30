@@ -33,6 +33,10 @@ name = "07-dht11-module"
 path = "src/bin/07-dht11-module.rs"
 
 [[bin]]
+name = "10-magical-light-cup"
+path = "src/bin/10-magical-light-cup.rs"
+
+[[bin]]
 name = "11-active-buzzer"
 path = "src/bin/11-active-buzzer.rs"
 
