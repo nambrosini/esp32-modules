@@ -38,12 +38,9 @@ fn main() -> ! {
         .text_color(BinaryColor::On)
         .build();
 
-    Text::with_baseline("Reb ti amo!", Point::new(0, 27), text_style, Baseline::Top)
+    Text::with_baseline("Hello, World!", Point::new(0, 0), text_style, Baseline::Top)
         .draw(&mut display)
         .unwrap();
-
-    // Nel main, dopo aver inizializzato `display`:
-    let raw_image: ImageRaw<BinaryColor> = ImageRaw::new(IMAGE_DATA, 64); // 32 = larghezza in pixel
 
     let image = Image::new(&raw_image, Point::new(64, 0));
     image.draw(&mut display).unwrap();
