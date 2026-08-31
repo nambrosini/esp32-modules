@@ -19,5 +19,6 @@
     - [15 Ds18b20 Sensor](./modules/15-ds18b20-sensor.md)
     - [16 Shock Sensor](./modules/16-shock-sensor.md)
     - [17 Pulse Rate Monitor](./modules/17-pulse-rate-monitor.md)
+    - [18 Button](./modules/18-button.md)
     - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
     - [46 Oled](./modules/46-oled.md)
