@@ -31,5 +31,6 @@
   - [27 Photo Interrupter Module](./modules/27-photo-interrupter-module.md)
   - [28 Line Tracking Sensor Module](./modules/28-line-tracking-sensor-module.md)
   - [29 Infrared Obstacle Avoidance Sensor Module](./modules/29-infrared-obstacle-avoidance-sensor-module.md)
+  - [30 Relay](./modules/30-relay.md)
   - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
   - [46 Oled](./modules/46-oled.md)

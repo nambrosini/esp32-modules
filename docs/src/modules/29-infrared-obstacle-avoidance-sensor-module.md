@@ -35,6 +35,26 @@ required to work with the receiver.
 
 ## Code
 
+```rust
+#[main]
+fn main() -> ! {
+    let peripherals = esp_hal::init(esp_hal::Config::default());
+    let delay = Delay::new();
+
+    let mut led = Output::new(peripherals.GPIO2, Level::Low, OutputConfig::default());
+    let switch = Input::new(peripherals.GPIO15, InputConfig::default());
+
+    loop {
+        if switch.is_low() {
+            led.set_high();
+        } else {
+            led.set_low();
+        }
+        delay.delay_millis(5);
+    }
+}
+```
+
 ## References
 
 - [Hosyond 45 in 1 Sensor Kit Documentation](https://45-in-1-sensor-kit.readthedocs.io/en/latest/29.infrared_obstacle_avoidance_sensor_module.html)
