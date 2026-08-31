@@ -1,5 +1,6 @@
 [book]
 title = "ESP32 Sensors in Rust"
+description = "A collection of sensors from Hoyson and code example on how to use them."
 authors = ["nambrosini"]
 language = "en"
 
@@ -7,3 +8,5 @@ language = "en"
 default-theme = "navy"
 preferred-dark-theme = "navy"
 additional-css = ["theme/tokyo-night-storm.css"]
+git-repository-url = "https://github.com/nambrosini/esp32-modules/tree/master/docs"
+site-url = "/esp32-modules/"
