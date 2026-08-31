@@ -15,5 +15,6 @@
     - [11 Active Buzzer](./modules/11-active-buzzer.md)
     - [12 Passtive Buzzer](./modules/12-passtive-buzzer.md)
     - [13 Analog Temperature](./modules/13-analog-temperature.md)
+    - [14 Photoresistor Module](./modules/14-photoresistor-module.md)
     - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
     - [46 Oled](./modules/46-oled.md)
