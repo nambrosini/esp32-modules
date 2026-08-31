@@ -45,6 +45,10 @@ name = "12-passive-buzzer"
 path = "src/bin/12-passive-buzzer.rs"
 
 [[bin]]
+name = "13-analog-temperature"
+path = "src/bin/13-analog-temperature.rs"
+
+[[bin]]
 name = "45-ultrasound"
 path = "src/bin/45-ultrasound.rs"
 
@@ -65,6 +69,8 @@ infrared          = "0.14.2"
 esp32-dht11-rs    = { version = "0.1.4", default-features = false, features = ["esp32"] }
 ssd1306           = "0.9"
 embedded-graphics = "0.8"
+nb = "1.1.0"
+libm = "0.2.16"
 
 [patch.crates-io]
 esp32-dht11-rs = { path = "vendor/esp32-dht11-rs" }

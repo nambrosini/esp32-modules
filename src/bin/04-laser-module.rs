@@ -34,7 +34,7 @@ fn main() -> ! {
     let peripherals = esp_hal::init(config);
     let delay = Delay::new();
 
-    let mut laser = Output::new(peripherals.GPIO4, Level::Low, OutputConfig::default());
+    let mut laser = Output::new(peripherals.GPIO25, Level::Low, OutputConfig::default());
 
     loop {
         laser.set_high();
