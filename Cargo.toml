@@ -49,6 +49,10 @@ name = "13-analog-temperature"
 path = "src/bin/13-analog-temperature.rs"
 
 [[bin]]
+name = "14-photoresistor"
+path = "src/bin/14-photoresistor.rs"
+
+[[bin]]
 name = "45-ultrasound"
 path = "src/bin/45-ultrasound.rs"
 
@@ -71,6 +75,7 @@ ssd1306           = "0.9"
 embedded-graphics = "0.8"
 nb = "1.1.0"
 libm = "0.2.16"
+onewire = "0.4"
 
 [patch.crates-io]
 esp32-dht11-rs = { path = "vendor/esp32-dht11-rs" }

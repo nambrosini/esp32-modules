@@ -1010,6 +1010,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "onewire"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "46326d0426636b36a753c6e795e2eeb431581f9663f90df7117a7842aad5b391"
+dependencies = [
+ "byteorder",
+ "embedded-hal 1.0.0",
+]
+
+[[package]]
 name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1195,6 +1205,7 @@ dependencies = [
  "libm",
  "log",
  "nb 1.1.0",
+ "onewire",
  "ssd1306",
 ]
 
