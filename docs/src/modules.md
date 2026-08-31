@@ -22,5 +22,6 @@ There are the following 45 sensors in the set:
 18. [Button](./modules/18-button.md)
 19. [Rotary Encoder](./modules/19-rotary-encoder.md)
 20. [Joystick](./modules/20-joystick.md)
+21. [Tilt Switch](./modules/21-tilt-switch.md)
 45. [Ultrasonic Module](./modules/45-ultrasonic.md)
 46. [46 Oled](./modules/46-oled.md)
