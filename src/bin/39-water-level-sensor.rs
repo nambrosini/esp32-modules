@@ -9,7 +9,7 @@
 
 use esp_hal::analog::adc::{Adc, AdcConfig};
 use esp_hal::delay::Delay;
-use esp_hal::gpio::{Input, InputConfig, Level, Output, OutputConfig};
+use esp_hal::gpio::{Level, Output, OutputConfig};
 use esp_hal::main;
 use esp_println::println;
 

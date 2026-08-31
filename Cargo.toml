@@ -33,6 +33,14 @@ name = "07-dht11-module"
 path = "src/bin/07-dht11-module.rs"
 
 [[bin]]
+name = "08-double-color-led"
+path = "src/bin/08-double-color-led.rs"
+
+[[bin]]
+name = "09-mini-double-color-led"
+path = "src/bin/09-mini-double-color-led.rs"
+
+[[bin]]
 name = "10-magical-light-cup"
 path = "src/bin/10-magical-light-cup.rs"
 
@@ -51,6 +59,94 @@ path = "src/bin/13-analog-temperature.rs"
 [[bin]]
 name = "14-photoresistor"
 path = "src/bin/14-photoresistor.rs"
+
+[[bin]]
+name = "15-digital-temp"
+path = "src/bin/15-digital-temp.rs"
+
+[[bin]]
+name = "16-shock-sensor"
+path = "src/bin/16-shock-sensor.rs"
+
+[[bin]]
+name = "17-pulse-rate-monitor"
+path = "src/bin/17-pulse-rate-monitor.rs"
+
+[[bin]]
+name = "18-button"
+path = "src/bin/18-button.rs"
+
+[[bin]]
+name = "19-rotary-encoder"
+path = "src/bin/19-rotary-encoder.rs"
+
+[[bin]]
+name = "20-joystick"
+path = "src/bin/20-joystick.rs"
+
+[[bin]]
+name = "21-tilt-switch"
+path = "src/bin/21-tilt-switch.rs"
+
+[[bin]]
+name = "22-ky-035-hall-sensor"
+path = "src/bin/22-ky-035-hall-sensor.rs"
+
+[[bin]]
+name = "23-tap-module"
+path = "src/bin/23-tap-module.rs"
+
+[[bin]]
+name = "24-ky-003-hall-sensor"
+path = "src/bin/24-ky-003-hall-sensor.rs"
+
+[[bin]]
+name = "25-mercury-tilt-switch"
+path = "src/bin/25-mercury-tilt-switch.rs"
+
+[[bin]]
+name = "26-reed-switch"
+path = "src/bin/26-reed-switch.rs"
+
+[[bin]]
+name = "27-photo-interruptor-module"
+path = "src/bin/27-photo-interruptor-module.rs"
+
+[[bin]]
+name = "28-line-tracking-sensor-module"
+path = "src/bin/28-line-tracking-sensor-module.rs"
+
+[[bin]]
+name = "29-infrared-obstacle-avoidance-sensor-module"
+path = "src/bin/29-infrared-obstacle-avoidance-sensor-module.rs"
+
+[[bin]]
+name = "30-relay"
+path = "src/bin/30-relay.rs"
+
+[[bin]]
+name = "32-linear-magnetic-hall-module"
+path = "src/bin/32-linear-magnetic-hall-module.rs"
+
+[[bin]]
+name = "33-metal-touch-sensor-module"
+path = "src/bin/33-metal-touch-sensor-module.rs"
+
+[[bin]]
+name = "34-flame-sensor-module"
+path = "src/bin/34-flame-sensor-module.rs"
+
+[[bin]]
+name = "37-high-sensitivity-sound-detection-module"
+path = "src/bin/37-high-sensitivity-sound-detection-module.rs"
+
+[[bin]]
+name = "38-microphone-sound-sensor-module"
+path = "src/bin/38-microphone-sound-sensor-module.rs"
+
+[[bin]]
+name = "39-water-level-sensor"
+path = "src/bin/39-water-level-sensor.rs"
 
 [[bin]]
 name = "45-ultrasound"
