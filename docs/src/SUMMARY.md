@@ -23,5 +23,6 @@
     - [19 Rotary Encoder](./modules/19-rotary-encoder.md)
     - [20 Joystick](./modules/20-joystick.md)
     - [21 Tilt Switch](./modules/21-tilt-switch.md)
+    - [22 Ky 035 Hall Sensor](./modules/22-ky-035-hall-sensor.md)
     - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
     - [46 Oled](./modules/46-oled.md)
