@@ -36,5 +36,8 @@
   - [32 Linear Magnetic Hall Module](./modules/32-linear-magnetic-hall-module.md)
   - [33 Metal Touch Sensor Module](./modules/33-metal-touch-sensor-module.md)
   - [34 Flame Sensor Module](./modules/34-flame-sensor-module.md)
+  - [37 High Sensitivity Sound Detection Module](./modules/37-high-sensitivity-sound-detection-module.md)
+  - [38 Microphone Sound Sensor Module](./modules/38-microphone-sound-sensor-module.md)
+  - [39 Water Level Sensor](./modules/39-water-level-sensor.md)
   - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
   - [46 Oled](./modules/46-oled.md)
