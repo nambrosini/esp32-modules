@@ -21,5 +21,6 @@ There are the following 45 sensors in the set:
 17. [Pulse Rate Monitor](./modules/17-pulse-rate-monitor.md)
 18. [Button](./modules/18-button.md)
 19. [Rotary Encoder](./modules/19-rotary-encoder.md)
+20. [Joystick](./modules/20-joystick.md)
 45. [Ultrasonic Module](./modules/45-ultrasonic.md)
 46. [46 Oled](./modules/46-oled.md)
