@@ -26,5 +26,6 @@
   - [22 Ky 035 Hall Sensor](./modules/22-ky-035-hall-sensor.md)
   - [23 Tap Module](./modules/23-tap-module.md)
   - [24 Ky 003 Hall Sensor](./modules/24-ky-003-hall-sensor.md)
+  - [25 Mercury Tilt Switch](./modules/25-mercury-tilt-switch.md)
   - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
   - [46 Oled](./modules/46-oled.md)
