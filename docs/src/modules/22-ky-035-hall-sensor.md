@@ -28,15 +28,14 @@ fn main() -> ! {
     let peripherals = esp_hal::init(esp_hal::Config::default());
     let delay = Delay::new();
 
-    let mut led = Output::new(peripherals.GPIO2, Level::Low, OutputConfig::default());
-    let switch = Input::new(peripherals.GPIO15, InputConfig::default());
+    let mut adc_config = AdcConfig::new();
+    let mut adc_pin = adc_config.enable_pin(peripherals.GPIO34, Attenuation::_11dB);
+    let mut sensor = Adc::new(peripherals.ADC1, adc_config);
 
     loop {
-        if switch.is_high() {
-            led.set_low();
-        } else {
-            led.set_high();
-        }
+        let raw_value = nb::block!(sensor.read_oneshot(&mut adc_pin)).unwrap();
+
+        println!("Value: {raw_value}");
         delay.delay_millis(5);
     }
 }

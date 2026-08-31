@@ -12,8 +12,6 @@ your finger.
 
 ## Specification
 
-
-
 ## Connect
 
 ![Image](../images/17-pulse-rate-monitor.jpg)

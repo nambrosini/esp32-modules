@@ -51,7 +51,7 @@ new url:
         f.write(content)
 
     with open("docs/src/SUMMARY.md", "a") as f:
-        f.write(f"    - [{title}](./modules/{slug}.md)\n")
+        f.write(f"  - [{title}](./modules/{slug}.md)\n")
 
     with open("docs/src/modules.md", "a") as f:
         f.write(f"{number}. [{name}](./modules/{slug}.md)\n")

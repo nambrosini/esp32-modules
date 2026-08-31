@@ -25,5 +25,6 @@ There are the following 45 sensors in the set:
 21. [Tilt Switch](./modules/21-tilt-switch.md)
 22. [Ky 035 Hall Sensor](./modules/22-ky-035-hall-sensor.md)
 23. [Tap Module](./modules/23-tap-module.md)
+24. [Ky 003 Hall Sensor](./modules/24-ky-003-hall-sensor.md)
 45. [Ultrasonic Module](./modules/45-ultrasonic.md)
 46. [46 Oled](./modules/46-oled.md)

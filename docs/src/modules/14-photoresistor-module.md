@@ -52,6 +52,7 @@ fn main() -> ! {
     }
 }
 ```
+
 ## References
 
 - [Hosyond 45 in 1 Sensor Kit Documentation](https://45-in-1-sensor-kit.readthedocs.io/en/latest/14.photoresistor_module.html)

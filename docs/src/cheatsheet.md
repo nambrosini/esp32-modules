@@ -183,7 +183,7 @@ Per attese più lunghe o per non bloccare la CPU (utile se in futuro passi ad Em
 ## Riepilogo cambi principali rispetto alle versioni precedenti alla 1.0
 
 | Prima | Ora (1.0+) |
-|---|---|
+| --- | --- |
 | `Peripherals::take()` + `SystemControl` + `ClockControl::...freeze()` | `esp_hal::init(Config::default())` |
 | `#[entry]` | `#[main]` |
 | `Io::new(...).pins.gpioX` | `peripherals.GPIOx` diretto |
