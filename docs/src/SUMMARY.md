@@ -35,5 +35,6 @@
   - [31 Breadboard Power Supply Module](./modules/31-breadboard-power-supply-module.md)
   - [32 Linear Magnetic Hall Module](./modules/32-linear-magnetic-hall-module.md)
   - [33 Metal Touch Sensor Module](./modules/33-metal-touch-sensor-module.md)
+  - [34 Flame Sensor Module](./modules/34-flame-sensor-module.md)
   - [45 Ultrasonic Module](./modules/45-ultrasonic.md)
   - [46 Oled](./modules/46-oled.md)

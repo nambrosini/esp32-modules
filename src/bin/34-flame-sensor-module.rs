@@ -44,7 +44,7 @@ fn main() -> ! {
     let mut led = Output::new(peripherals.GPIO2, Level::Low, OutputConfig::default());
 
     loop {
-        if dig_in.is_high() {
+        if dig_in.is_low() {
             led.set_high();
         } else {
             led.set_low();
