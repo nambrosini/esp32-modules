@@ -25,14 +25,18 @@ new url:
 
     description = "\n\n".join(clean(p) for p in re.findall(r"<p>(.*?)</p>", section("description"), re.S))
     specification = "\n".join(f"- {clean(li)}" for li in re.findall(r"<li><p>(.*?)</p></li>", section("specification"), re.S))
-    img_src = re.search(r'src="([^"]+)"', section("connect")).group(1)
+    connect_match = re.search(r'src="([^"]+)"', section("connect"))
 
-    img_url = urljoin(url, img_src)
-    tmp_img = f"/tmp/{slug}{os.path.splitext(img_src)[1]}"
-    with urllib.request.urlopen(urllib.request.Request(img_url, headers=headers)) as resp, open(tmp_img, "wb") as f:
-        f.write(resp.read())
-    subprocess.run(["sips", "-s", "format", "jpeg", tmp_img, "--out", f"docs/src/images/{slug}.jpg"], check=True, capture_output=True)
-    os.remove(tmp_img)
+    connect_lines = []
+    if connect_match:
+        img_src = connect_match.group(1)
+        img_url = urljoin(url, img_src)
+        tmp_img = f"/tmp/{slug}{os.path.splitext(img_src)[1]}"
+        with urllib.request.urlopen(urllib.request.Request(img_url, headers=headers)) as resp, open(tmp_img, "wb") as f:
+            f.write(resp.read())
+        subprocess.run(["sips", "-s", "format", "jpeg", tmp_img, "--out", f"docs/src/images/{slug}.jpg"], check=True, capture_output=True)
+        os.remove(tmp_img)
+        connect_lines = ["## Connect", "", f"![Image](../images/{slug}.jpg)", ""]
 
     module_path = f"docs/src/modules/{slug}.md"
     content = "\n".join([
@@ -41,8 +45,7 @@ new url:
         description, "",
         "## Specification", "",
         specification, "",
-        "## Connect", "",
-        f"![Image](../images/{slug}.jpg)", "",
+        *connect_lines,
         "## Code", "",
         "## References", "",
         f"- [Hosyond 45 in 1 Sensor Kit Documentation]({url})", "",

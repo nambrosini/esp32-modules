@@ -7,8 +7,9 @@
 )]
 #![deny(clippy::large_stack_frames)]
 
+use esp_hal::analog::adc::{Adc, AdcConfig};
 use esp_hal::delay::Delay;
-use esp_hal::gpio::{Level, Output, OutputConfig};
+use esp_hal::gpio::{Input, InputConfig, Level, Output, OutputConfig};
 use esp_hal::main;
 use esp_println::println;
 
@@ -30,14 +31,21 @@ fn main() -> ! {
     let peripherals = esp_hal::init(esp_hal::Config::default());
     let delay = Delay::new();
 
-    let mut relay = Output::new(peripherals.GPIO15, Level::Low, OutputConfig::default());
+    let dig_in = Input::new(peripherals.GPIO18, InputConfig::default());
+
+    let mut adc_config = AdcConfig::default();
+    let mut adc_pin =
+        adc_config.enable_pin(peripherals.GPIO4, esp_hal::analog::adc::Attenuation::_11dB);
+    let mut adc = Adc::new(peripherals.ADC1, adc_config);
+
+    let mut led = Output::new(peripherals.GPIO2, Level::Low, OutputConfig::default());
 
     loop {
-        relay.set_high();
-        delay.delay_millis(1000);
-        println!("UP");
-        relay.set_low();
-        delay.delay_millis(1000);
-        println!("DOWN");
+        led.set_level(dig_in.level());
+
+        let anal_val = nb::block!(adc.read_oneshot(&mut adc_pin)).unwrap();
+        println!("{anal_val}");
+
+        delay.delay_millis(100);
     }
 }
