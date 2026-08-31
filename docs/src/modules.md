@@ -29,5 +29,6 @@ There are the following 45 sensors in the set:
 25. [Mercury Tilt Switch](./modules/25-mercury-tilt-switch.md)
 26. [Reed Switch](./modules/26-reed-switch.md)
 27. [Photo Interrupter Module](./modules/27-photo-interrupter-module.md)
+28. [Line Tracking Sensor Module](./modules/28-line-tracking-sensor-module.md)
 45. [Ultrasonic Module](./modules/45-ultrasonic.md)
 46. [46 Oled](./modules/46-oled.md)
