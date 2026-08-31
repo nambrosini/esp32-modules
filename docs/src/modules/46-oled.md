@@ -7,10 +7,7 @@ Oled screen.
 ## Specification
 
 - Definition: 128x64
-
-## Connect
-
-![Image](../images/45-ultrasonic-module.jpg)
+- Model: ssd1306
 
 ## Code
 
